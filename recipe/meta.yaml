@@ -25,6 +25,7 @@ requirements:
     - pydicom >=2.1.0,<3.0.0
     - python >=3.6,<4.0
     - poetry
+    - dicomweb-client
 
 test:
   imports:
