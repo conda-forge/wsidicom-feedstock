@@ -1,5 +1,5 @@
 {% set name = "wsidicom" %}
-{% set version = "0.15.2" %}
+{% set version = "0.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/wsidicom-{{ version }}.tar.gz
-  sha256: da142d64f9cb8b27ef6db156c66fa0c98c7cca9990b01a7b36866f06060fe16e
+  sha256: 9bfc13e034c706f283435173ab5b900d423be7fd24378e1be5d0a4b97eb30d93
 
 build:
   noarch: python
