@@ -28,7 +28,6 @@ requirements:
     - dicomweb-client >=0.59.1
     - six
     - marshmallow >=3.20.1
-    - imagecodecs >=2024.1.1
 
 test:
   imports:
