@@ -28,6 +28,7 @@ requirements:
     - dicomweb-client >=0.59.1
     - six
     - marshmallow >=3.20.1
+    - universal_pathlib >=0.2.1
 
 test:
   imports:
