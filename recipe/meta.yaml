@@ -25,7 +25,7 @@ requirements:
     - pydicom >=3.0.0
     - python >=3.6,<4.0
     - poetry
-    - dicomweb-client >=0.59.1
+    - dicomweb-client <0.60.0,>=0.59.2
     - six
     - marshmallow >=3.20.1
     - universal_pathlib >=0.2.1
