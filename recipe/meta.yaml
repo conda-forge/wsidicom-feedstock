@@ -23,7 +23,7 @@ requirements:
     - numpy >=1.22.0,<2.0.0
     - pillow >=9.1.1,<10.0.0
     - pydicom >=3.0.0
-    - python >={{ python_min }},<4.0
+    - python >={{ python_min }},<3.11
     - poetry
     - dicomweb-client >=0.59.1
     - six
