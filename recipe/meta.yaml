@@ -17,20 +17,19 @@ build:
 requirements:
   host:
     - pip
-    - python {{ python_min }}
+    - python {{ python_min }},<3.12
     - poetry
     - _python_rc
   run:
     - numpy >=1.22.0,<2.0.0
     - pillow >=9.1.1,<10.0.0
     - pydicom >=3.0.0
-    - python >={{ python_min }},<4.0
+    - python >={{ python_min }},<3.12
     - poetry
     - dicomweb-client >=0.59.1
     - six
     - marshmallow >=3.20.1
     - universal_pathlib >=0.2.1
-    - _python_rc
 
 test:
   imports:
@@ -39,7 +38,7 @@ test:
     - pip check
   requires:
     - pip
-    - python {{ python_min }}
+    - python {{ python_min }},<3.12
 
 about:
   home: https://github.com/imi-bigpicture/wsidicom
