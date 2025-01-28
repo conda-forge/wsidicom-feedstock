@@ -1,5 +1,6 @@
 {% set name = "wsidicom" %}
 {% set version = "0.22.0" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -17,7 +18,7 @@ build:
 requirements:
   host:
     - pip
-    - python {{ python_min }},<3.12
+    - python {{ python_min }}
     - poetry
     - _python_rc
   run:
