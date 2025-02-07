@@ -21,8 +21,8 @@ requirements:
     - python {{ python_min }}
     - poetry
   run:
-    - numpy >=1.22.0,<2.0.0
-    - pillow >=9.1.1,<10.0.0
+    - numpy >=1.22.0
+    - pillow >=9.1.1
     - pydicom >=3.0.0
     - python >={{ python_min }},<3.12
     - poetry
