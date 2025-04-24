@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -24,12 +24,12 @@ requirements:
     - numpy >=1.22.0
     - pillow >=9.1.1
     - pydicom >=3.0.0
-    - python >={{ python_min }},<3.12
+    - python >={{ python_min }}
     - poetry
     - dicomweb-client >=0.59.2
     - fsspec >=2024.2.0,<2025.0.0
     - six
-    - marshmallow >=3.20.1
+    - marshmallow >=3.20.1,<4
     - universal_pathlib >=0.2.1
     - imagecodecs >=2024.1.1,!=2024.9.22
 
@@ -40,7 +40,7 @@ test:
     - pip check
   requires:
     - pip
-    - python {{ python_min }},<3.12
+    - python {{ python_min }}
 
 about:
   home: https://github.com/imi-bigpicture/wsidicom
