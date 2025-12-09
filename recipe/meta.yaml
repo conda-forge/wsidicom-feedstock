@@ -20,6 +20,7 @@ requirements:
     - pip
     - python {{ python_min }}
     - poetry
+    - hatchling
   run:
     - numpy >=1.22.0
     - pillow >=9.1.1
@@ -32,7 +33,6 @@ requirements:
     - marshmallow >=3.20.1,<4
     - universal_pathlib >=0.2.1
     - imagecodecs >=2024.1.1,!=2024.9.22
-    - hatchling
 
 test:
   imports:
