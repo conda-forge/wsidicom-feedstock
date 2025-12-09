@@ -32,6 +32,7 @@ requirements:
     - marshmallow >=3.20.1,<4
     - universal_pathlib >=0.2.1
     - imagecodecs >=2024.1.1,!=2024.9.22
+    - hatchling
 
 test:
   imports:
