@@ -1,5 +1,5 @@
 {% set name = "wsidicom" %}
-{% set version = "0.29.0" %}
+{% set version = "0.29.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/wsidicom-{{ version }}.tar.gz
-  sha256: 851d8f8dc31098646cc06ec5b049a33aabedcaf2aa8b1fdb6eaa9fde5f06c8e1
+  sha256: c380a1e3e4ffa5dd6c688813ac9482a3a8748cac6e2a5587573ecfff954aa57e
 
 build:
   noarch: python
@@ -33,6 +33,7 @@ requirements:
     - marshmallow >=3.20.1,<4
     - universal_pathlib >=0.2.1,<0.3.0
     - imagecodecs >=2024.1.1,!=2024.9.22
+    - cachetools >=7.1.3
 
 test:
   imports:
