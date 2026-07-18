@@ -1,5 +1,5 @@
 {% set name = "wsidicom" %}
-{% set version = "0.33.1" %}
+{% set version = "0.34.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/wsidicom-{{ version }}.tar.gz
-  sha256: defe223727ebdcd1e8c1d009341a32df58c21c791257d67fe13f75f42319a5d7
+  sha256: 8a805735c32bc1d688cf36787ed039909414388414b860fb377694dc0dc59ea4
 
 build:
   noarch: python
@@ -27,8 +27,8 @@ requirements:
     - pydicom >=3.0.0
     - python >={{ python_min }}
     - poetry
-    - dicomweb-client >=0.59.2,<0.60.0
-    - fsspec >=2024.2.0,<2025.0.0
+    - dicomweb-client >=0.61.0
+    - fsspec >=2024.2.0
     - six
     - marshmallow >=3.20.1,<4
     - universal_pathlib >=0.2.1,<0.3.0
