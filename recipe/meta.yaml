@@ -7,13 +7,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/wsidicom-{{ version }}.tar.gz
+  url: https://pythonhosted.org{{ name[0] }}/{{ name }}/wsidicom-{{ version }}.tar.gz
   sha256: c9d31b72134b657a5675b2392715410d5dc21ab7aa2f7673aed8bbdb0bc726f5
 
 build:
-  noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
   number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
